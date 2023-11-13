@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Navbar from './components/navbar';
+import Hero from './components/body';
+import Design from './components/Design';
+import Skillset from './components/Skillset';
 
+import Contact from './components/Contact';
+import Projects from './components/Projects'; // Import the Projects
+import Workexp from './components/Workexp';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-gradient-to-r from-gray-600 to-gray-900">
+      <Design/>
+      <Navbar />
+      
+      <Hero />
+      <Skillset/>
+      <Workexp/>
+      <Projects/>
+      <Contact/>
     </div>
   );
 }
